@@ -1,0 +1,39 @@
+/* Efek card */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Gradient text */
+.bg-pattern {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#0ea5e9 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+}
+
+/* Smooth video & iframe */
+video, iframe {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+/* Animasi gradasi berjalan untuk teks */
+.animate-gradient {
+  background: linear-gradient(90deg, #0ea5e9, #8b5cf6, #ec4899, #0ea5e9);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 5s infinite linear;
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
